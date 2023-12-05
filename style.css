@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Rubik:wght@300;400;600&family=Sarabun:wght@100;400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+    font-family: 'Rubik', sans-serif;
+    font-family: 'Sarabun', sans-serif;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+
+/* nav */
+nav {
+    display: flex;
+    justify-content: flex-end;
+    gap: 16px;
+    margin-top: 16px;
+    margin-right: 36px;
+}
+nav a {
+    text-decoration: none;
+    color: black;
+}
+
+/* header */
+header {
+    margin: 50px 10% 26px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.header-text {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+.header-text button {
+    width: 140px;
+    background-color: coral;
+    color: white;
+    border: none;
+    padding: 3px;
+    border-radius: 4px;
+}
+.header-pic img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    background-position: center center;
+}
+/* main */
+.aboveposts {
+    display: flex;
+    justify-content: space-between;
+    padding-inline: 10%;
+    padding-top: 10px;
+    background-color: lightskyblue;
+}
+.posts {
+    background-color: lightskyblue;
+    padding: 15px 10% 35px;
+    display: flex;
+    flex-direction: row; 
+    gap: 30px;
+}
+.post {
+    background-color: white;
+    padding: 20px;
+    border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+h1, h4{
+    margin-top: 50px;
+    margin-left: 10%;
+    margin-bottom: 26px;
+}
+.container-w-pic {
+    width: 80%;
+    /* height: 200px; */
+    padding: 20px 40px 20px 20x;
+    margin: auto;
+    border-bottom: 0.5px solid gainsboro;
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+}
+.container-w-pic img {
+    height: 160px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin: 20px 12px;
+}
+
+.container-content {
+    padding: 20px 40px 20px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.subtopic {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+.subtopic div:first-child {
+    background-color:darkslategrey;
+    color: white;
+    padding: 4px 8px;
+    border-radius: 20px;
+}
+.container {
+    width: 80%;
+    padding: 20px 30px 20px 0;
+    margin: auto;
+    border-bottom: 0.5px solid gainsboro;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.content {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+}
+/* footer */
+footer {
+    margin-top: 90px;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+}
+.icons {
+    display: flex;
+    gap: 20px;
+    font-size: 24px;
+}
+
+@media only screen and (max-width: 600px) {
+    .bars {
+        display: block !important;
+        text-align: end;
+        padding-top: 10px;
+        padding-right: 10px;
+    }
+    nav {
+        display: none;
+    }
+    .bars:hover + nav{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: darkgray;
+        gap: 22px;
+        width: 100%;
+    }
+    header {
+        flex-direction: column-reverse;
+        gap: 16px;
+    }
+    .header-text {
+        gap: 20px;
+        align-items: center;
+        text-align: center;
+    }
+    .aboveposts p:last-child{
+        display: none;
+    }
+    .aboveposts p:first-child{
+        margin: auto;
+    }
+    h1 {
+        margin-top: 30px;
+        margin-left: 2.5%;
+        margin-bottom: 10px;
+    }
+    h4 {
+        padding-block: 20px;
+        margin: auto    ;
+        text-align: center;
+    }
+    .posts {
+        flex-direction: column;
+    }
+    .container , .container-w-pic{
+        flex-direction: column;
+        width: 95%;
+        padding-right: 0;
+        margin: auto;
+    }
+    .content {
+        width: 95%;
+    }
+  }
